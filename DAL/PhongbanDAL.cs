@@ -32,5 +32,23 @@ namespace DAL
            value[3] = p.Pass;
            return cn.Update("insert into PHONGBAN values(@MAPB,@TENPB,@TENNDN,@PASS)", name, value, Nparameter);
        }
+
+       public int Suapb(PhongbanPublic p)
+       {
+           int Nparameter = 4;
+           string[] name = new string[Nparameter];
+           string[] value = new string[Nparameter];
+           name[0] = "@MAPB";
+           name[1] = "@TENPB";
+           name[2] = "@TENNDN";
+           name[3] = "@PASS";
+           value[0] = p.Mapb;
+           value[1] = p.Tenpb;
+           value[2] = p.Tenndn;
+           value[3] = p.Pass;
+
+           return cn.Update("update PHONGBAN set MAPB=@MAPB,TENPB=@TENPB,TENNDN=@TENNDN,PASS=@PASS where MAPB=@MAPB", name, value, Nparameter);
+       }
+
     }
 }

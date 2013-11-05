@@ -20,5 +20,10 @@ namespace BUL
        {
            return cls.Thempb(p);
        }
+
+       public int Suaphongban(PhongbanPublic p)
+       {
+           return cls.Suapb(p);
+       }
     }
 }

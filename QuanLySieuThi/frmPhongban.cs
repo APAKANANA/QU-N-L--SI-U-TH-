@@ -49,6 +49,42 @@ namespace QuanLySieuThi
             
         }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {    
+            txtId.DataBindings.Add("text", dataGridView1.DataSource, "MAPB");
+            txtName.DataBindings.Add("text", dataGridView1.DataSource, "TENPB");
+            txtInterest.DataBindings.Add("text", dataGridView1.DataSource, "TENNDN");
+            txtPass.DataBindings.Add("text", dataGridView1.DataSource, "PASS");
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            PhongbanPublic p = new PhongbanPublic();
+            PhongbanBUL cls = new PhongbanBUL();
+            p.Mapb = txtId.Text;
+            p.Tenpb = txtName.Text;
+            p.Tenndn = txtInterest.Text;
+            p.Pass = txtPass.Text;
+            cls.Suaphongban(p);
+
+            txtId.DataBindings.Clear();
+            txtName.DataBindings.Clear();
+            txtInterest.DataBindings.Clear();
+            txtPass.DataBindings.Clear();
+
+            frmPhongban_Load(sender, e);
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtId.DataBindings.Clear();
+            txtName.DataBindings.Clear();
+            txtInterest.DataBindings.Clear();
+            txtPass.DataBindings.Clear();
+            frmPhongban_Load(sender, e);
+        }
+
         
     }
 }

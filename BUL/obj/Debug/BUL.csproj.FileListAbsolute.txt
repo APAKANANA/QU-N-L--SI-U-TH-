@@ -7,3 +7,12 @@ D:\cry\QuanLySieuThi\BUL\bin\Debug\Public.pdb
 D:\cry\QuanLySieuThi\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
 D:\cry\QuanLySieuThi\BUL\obj\Debug\BUL.dll
 D:\cry\QuanLySieuThi\BUL\obj\Debug\BUL.pdb
+D:\cry\doanQLST\trunk\BUL\bin\Debug\BUL.dll
+D:\cry\doanQLST\trunk\BUL\bin\Debug\BUL.pdb
+D:\cry\doanQLST\trunk\BUL\bin\Debug\DAL.dll
+D:\cry\doanQLST\trunk\BUL\bin\Debug\Public.dll
+D:\cry\doanQLST\trunk\BUL\bin\Debug\DAL.pdb
+D:\cry\doanQLST\trunk\BUL\bin\Debug\Public.pdb
+D:\cry\doanQLST\trunk\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+D:\cry\doanQLST\trunk\BUL\obj\Debug\BUL.dll
+D:\cry\doanQLST\trunk\BUL\obj\Debug\BUL.pdb

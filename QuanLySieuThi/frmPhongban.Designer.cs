@@ -108,6 +108,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(36, 36);
             this.btnUpdate.Text = "tsbtnUpdate";
             this.btnUpdate.ToolTipText = "Sửa";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // toolStripSeparator2
             // 
@@ -148,7 +149,7 @@
             this.btnCancel});
             this.ts2.Location = new System.Drawing.Point(117, 7);
             this.ts2.Name = "ts2";
-            this.ts2.Size = new System.Drawing.Size(90, 39);
+            this.ts2.Size = new System.Drawing.Size(121, 39);
             this.ts2.TabIndex = 45;
             this.ts2.Text = "toolStrip3";
             // 
@@ -162,6 +163,7 @@
             this.btnOK.Size = new System.Drawing.Size(36, 36);
             this.btnOK.Text = "toolStripButton4";
             this.btnOK.ToolTipText = "OK";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // toolStripSeparator3
             // 
@@ -178,6 +180,7 @@
             this.btnCancel.Size = new System.Drawing.Size(36, 36);
             this.btnCancel.Text = "toolStripButton5";
             this.btnCancel.ToolTipText = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // panel1
             // 
