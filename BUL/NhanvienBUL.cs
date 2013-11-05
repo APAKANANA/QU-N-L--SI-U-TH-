@@ -21,6 +21,16 @@ namespace BUL
        {
            return cls.ThemNhanvien(p);
        }
+
+       public int SuaNhanvien(NhanvienPublic p)
+       {
+           return cls.SuaNhanvien(p);
+       }
+
+       public int XoaNhanvien(NhanvienPublic p)
+       {
+           return cls.XoaNhanvien(p);
+       }
        
      }
 }

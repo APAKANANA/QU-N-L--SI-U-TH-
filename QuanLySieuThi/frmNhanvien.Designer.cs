@@ -63,7 +63,6 @@
             this.lblDchi = new System.Windows.Forms.Label();
             this.lblDthoai = new System.Windows.Forms.Label();
             this.lblMapb = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtManv = new System.Windows.Forms.TextBox();
             this.txtTennv = new System.Windows.Forms.TextBox();
             this.txtGtinh = new System.Windows.Forms.TextBox();
@@ -73,12 +72,24 @@
             this.txtDchi = new System.Windows.Forms.TextBox();
             this.txtDthoai = new System.Windows.Forms.TextBox();
             this.txtMapb = new System.Windows.Forms.TextBox();
+            this.grptxt = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIOITINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYSINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYVL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DCHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DTHOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MAPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.toolStrip3.SuspendLayout();
             this.ts2.SuspendLayout();
             this.ts3.SuspendLayout();
             this.ts1.SuspendLayout();
             this.tsbtnSearch.SuspendLayout();
+            this.grptxt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,6 +199,7 @@
             this.btnCancel.Size = new System.Drawing.Size(36, 36);
             this.btnCancel.Text = "toolStripButton5";
             this.btnCancel.ToolTipText = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
@@ -199,6 +211,7 @@
             this.btnOK.Size = new System.Drawing.Size(36, 36);
             this.btnOK.Text = "toolStripButton4";
             this.btnOK.ToolTipText = "OK";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // ts2
             // 
@@ -258,6 +271,7 @@
             this.btnDel.Size = new System.Drawing.Size(36, 36);
             this.btnDel.Text = "tsbtnDel";
             this.btnDel.ToolTipText = "Xóa";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // toolStripSeparator2
             // 
@@ -274,6 +288,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(36, 36);
             this.btnUpdate.Text = "tsbtnUpdate";
             this.btnUpdate.ToolTipText = "Sửa";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // toolStripSeparator1
             // 
@@ -305,7 +320,7 @@
             this.toolStripSeparator5});
             this.ts1.Location = new System.Drawing.Point(440, 396);
             this.ts1.Name = "ts1";
-            this.ts1.Size = new System.Drawing.Size(169, 39);
+            this.ts1.Size = new System.Drawing.Size(138, 39);
             this.ts1.TabIndex = 45;
             this.ts1.Text = "toolStrip1";
             // 
@@ -451,19 +466,10 @@
             this.lblMapb.TabIndex = 58;
             this.lblMapb.Text = "MaPB";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 69);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(504, 319);
-            this.dataGridView1.TabIndex = 59;
-            // 
             // txtManv
             // 
             this.txtManv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtManv.Location = new System.Drawing.Point(610, 69);
+            this.txtManv.Location = new System.Drawing.Point(11, 13);
             this.txtManv.Name = "txtManv";
             this.txtManv.Size = new System.Drawing.Size(106, 21);
             this.txtManv.TabIndex = 60;
@@ -471,7 +477,7 @@
             // txtTennv
             // 
             this.txtTennv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTennv.Location = new System.Drawing.Point(610, 98);
+            this.txtTennv.Location = new System.Drawing.Point(11, 42);
             this.txtTennv.Name = "txtTennv";
             this.txtTennv.Size = new System.Drawing.Size(105, 21);
             this.txtTennv.TabIndex = 61;
@@ -479,7 +485,7 @@
             // txtGtinh
             // 
             this.txtGtinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGtinh.Location = new System.Drawing.Point(610, 133);
+            this.txtGtinh.Location = new System.Drawing.Point(11, 77);
             this.txtGtinh.Name = "txtGtinh";
             this.txtGtinh.Size = new System.Drawing.Size(104, 21);
             this.txtGtinh.TabIndex = 62;
@@ -487,7 +493,7 @@
             // txtCmnd
             // 
             this.txtCmnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCmnd.Location = new System.Drawing.Point(610, 168);
+            this.txtCmnd.Location = new System.Drawing.Point(11, 112);
             this.txtCmnd.Name = "txtCmnd";
             this.txtCmnd.Size = new System.Drawing.Size(105, 21);
             this.txtCmnd.TabIndex = 63;
@@ -495,7 +501,7 @@
             // txtNgsinh
             // 
             this.txtNgsinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgsinh.Location = new System.Drawing.Point(610, 204);
+            this.txtNgsinh.Location = new System.Drawing.Point(11, 148);
             this.txtNgsinh.Name = "txtNgsinh";
             this.txtNgsinh.Size = new System.Drawing.Size(104, 21);
             this.txtNgsinh.TabIndex = 64;
@@ -503,7 +509,7 @@
             // txtNgayvl
             // 
             this.txtNgayvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayvl.Location = new System.Drawing.Point(610, 243);
+            this.txtNgayvl.Location = new System.Drawing.Point(11, 187);
             this.txtNgayvl.Name = "txtNgayvl";
             this.txtNgayvl.Size = new System.Drawing.Size(104, 21);
             this.txtNgayvl.TabIndex = 65;
@@ -511,7 +517,7 @@
             // txtDchi
             // 
             this.txtDchi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDchi.Location = new System.Drawing.Point(610, 282);
+            this.txtDchi.Location = new System.Drawing.Point(11, 226);
             this.txtDchi.Name = "txtDchi";
             this.txtDchi.Size = new System.Drawing.Size(105, 21);
             this.txtDchi.TabIndex = 66;
@@ -519,7 +525,7 @@
             // txtDthoai
             // 
             this.txtDthoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDthoai.Location = new System.Drawing.Point(610, 318);
+            this.txtDthoai.Location = new System.Drawing.Point(11, 262);
             this.txtDthoai.Name = "txtDthoai";
             this.txtDthoai.Size = new System.Drawing.Size(104, 21);
             this.txtDthoai.TabIndex = 67;
@@ -527,10 +533,100 @@
             // txtMapb
             // 
             this.txtMapb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMapb.Location = new System.Drawing.Point(610, 355);
+            this.txtMapb.Location = new System.Drawing.Point(11, 299);
             this.txtMapb.Name = "txtMapb";
             this.txtMapb.Size = new System.Drawing.Size(104, 21);
             this.txtMapb.TabIndex = 68;
+            // 
+            // grptxt
+            // 
+            this.grptxt.Controls.Add(this.txtManv);
+            this.grptxt.Controls.Add(this.txtMapb);
+            this.grptxt.Controls.Add(this.txtTennv);
+            this.grptxt.Controls.Add(this.txtDthoai);
+            this.grptxt.Controls.Add(this.txtGtinh);
+            this.grptxt.Controls.Add(this.txtDchi);
+            this.grptxt.Controls.Add(this.txtCmnd);
+            this.grptxt.Controls.Add(this.txtNgayvl);
+            this.grptxt.Controls.Add(this.txtNgsinh);
+            this.grptxt.Location = new System.Drawing.Point(598, 56);
+            this.grptxt.Name = "grptxt";
+            this.grptxt.Size = new System.Drawing.Size(159, 342);
+            this.grptxt.TabIndex = 69;
+            this.grptxt.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MANV,
+            this.TENNV,
+            this.GIOITINH,
+            this.CMND,
+            this.NGAYSINH,
+            this.NGAYVL,
+            this.DCHI,
+            this.DTHOAI,
+            this.MAPB});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 69);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(504, 319);
+            this.dataGridView1.TabIndex = 59;
+            // 
+            // MANV
+            // 
+            this.MANV.DataPropertyName = "MANV";
+            this.MANV.HeaderText = "Mã NV";
+            this.MANV.Name = "MANV";
+            // 
+            // TENNV
+            // 
+            this.TENNV.DataPropertyName = "TENNV";
+            this.TENNV.HeaderText = "Tên NV";
+            this.TENNV.Name = "TENNV";
+            // 
+            // GIOITINH
+            // 
+            this.GIOITINH.DataPropertyName = "GIOITINH";
+            this.GIOITINH.HeaderText = "Giới Tính";
+            this.GIOITINH.Name = "GIOITINH";
+            // 
+            // CMND
+            // 
+            this.CMND.DataPropertyName = "CMND";
+            this.CMND.HeaderText = "CMND";
+            this.CMND.Name = "CMND";
+            // 
+            // NGAYSINH
+            // 
+            this.NGAYSINH.DataPropertyName = "NGAYSINH";
+            this.NGAYSINH.HeaderText = "Ngày Sinh";
+            this.NGAYSINH.Name = "NGAYSINH";
+            // 
+            // NGAYVL
+            // 
+            this.NGAYVL.DataPropertyName = "NGAYVL";
+            this.NGAYVL.HeaderText = "Ngày Vào Làm";
+            this.NGAYVL.Name = "NGAYVL";
+            // 
+            // DCHI
+            // 
+            this.DCHI.DataPropertyName = "DCHI";
+            this.DCHI.HeaderText = "Địa Chỉ";
+            this.DCHI.Name = "DCHI";
+            // 
+            // DTHOAI
+            // 
+            this.DTHOAI.DataPropertyName = "DTHOAI";
+            this.DTHOAI.HeaderText = "Điện Thoại";
+            this.DTHOAI.Name = "DTHOAI";
+            // 
+            // MAPB
+            // 
+            this.MAPB.DataPropertyName = "MAPB";
+            this.MAPB.HeaderText = "Mã Phòng";
+            this.MAPB.Name = "MAPB";
             // 
             // frmNhanvien
             // 
@@ -538,15 +634,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(769, 444);
-            this.Controls.Add(this.txtMapb);
-            this.Controls.Add(this.txtDthoai);
-            this.Controls.Add(this.txtDchi);
-            this.Controls.Add(this.txtNgayvl);
-            this.Controls.Add(this.txtNgsinh);
-            this.Controls.Add(this.txtCmnd);
-            this.Controls.Add(this.txtGtinh);
-            this.Controls.Add(this.txtTennv);
-            this.Controls.Add(this.txtManv);
+            this.Controls.Add(this.grptxt);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblMapb);
             this.Controls.Add(this.lblDthoai);
@@ -580,6 +668,8 @@
             this.ts1.PerformLayout();
             this.tsbtnSearch.ResumeLayout(false);
             this.tsbtnSearch.PerformLayout();
+            this.grptxt.ResumeLayout(false);
+            this.grptxt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -622,7 +712,6 @@
         private System.Windows.Forms.Label lblDchi;
         private System.Windows.Forms.Label lblDthoai;
         private System.Windows.Forms.Label lblMapb;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtManv;
         private System.Windows.Forms.TextBox txtTennv;
         private System.Windows.Forms.TextBox txtGtinh;
@@ -632,5 +721,16 @@
         private System.Windows.Forms.TextBox txtDchi;
         private System.Windows.Forms.TextBox txtDthoai;
         private System.Windows.Forms.TextBox txtMapb;
+        private System.Windows.Forms.GroupBox grptxt;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MANV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GIOITINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CMND;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYSINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYVL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DCHI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DTHOAI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MAPB;
     }
 }

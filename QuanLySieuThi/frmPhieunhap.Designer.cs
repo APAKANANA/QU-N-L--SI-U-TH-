@@ -311,7 +311,7 @@
             this.toolStripSeparator5});
             this.toolStrip2.Location = new System.Drawing.Point(307, 64);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(138, 39);
+            this.toolStrip2.Size = new System.Drawing.Size(169, 39);
             this.toolStrip2.TabIndex = 43;
             this.toolStrip2.Text = "toolStrip1";
             // 
@@ -341,6 +341,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(36, 36);
             this.btnUpdate.Text = "tsbtnUpdate";
             this.btnUpdate.ToolTipText = "Sửa";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // toolStripSeparator3
             // 
