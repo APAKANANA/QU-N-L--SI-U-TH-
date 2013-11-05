@@ -1,0 +1,50 @@
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe.config
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csprojResolveAssemblyReference.cache
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmLapHoaDon.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmlogin.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmMain.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmPhieunhap.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmSanpham.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Properties.Resources.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmKhachhang.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmNhacc.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmNhanvien.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmPhongban.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuKH.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.pdb
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmAbout.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmThongke.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuNV.resources
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.exe
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.pdb
+D:\Đồ án\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuSp.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe.config
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.exe
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.pdb
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csprojResolveAssemblyReference.cache
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmAbout.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmKhachhang.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmLapHoaDon.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmlogin.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmMain.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmNhacc.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmNhanvien.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmPhieunhap.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmPhongban.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmSanpham.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmThongke.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuKH.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuNV.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuSp.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Properties.Resources.resources
+D:\cry\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.pdb
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\BUL.dll
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\Public.dll
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\DAL.dll
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\BUL.pdb
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\Public.pdb
+D:\cry\QuanLySieuThi\QuanLySieuThi\bin\Debug\DAL.pdb

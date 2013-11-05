@@ -1,0 +1,9 @@
+D:\cry\QuanLySieuThi\BUL\bin\Debug\BUL.dll
+D:\cry\QuanLySieuThi\BUL\bin\Debug\BUL.pdb
+D:\cry\QuanLySieuThi\BUL\bin\Debug\DAL.dll
+D:\cry\QuanLySieuThi\BUL\bin\Debug\Public.dll
+D:\cry\QuanLySieuThi\BUL\bin\Debug\DAL.pdb
+D:\cry\QuanLySieuThi\BUL\bin\Debug\Public.pdb
+D:\cry\QuanLySieuThi\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+D:\cry\QuanLySieuThi\BUL\obj\Debug\BUL.dll
+D:\cry\QuanLySieuThi\BUL\obj\Debug\BUL.pdb
