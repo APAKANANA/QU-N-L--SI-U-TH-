@@ -76,3 +76,4 @@ D:\cry\doanQLST\trunk\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuNV.resource
 D:\cry\doanQLST\trunk\QuanLySieuThi\obj\Debug\QuanLySieuThi.frmTracuuSp.resources
 D:\cry\doanQLST\trunk\QuanLySieuThi\obj\Debug\QuanLySieuThi.Properties.Resources.resources
 D:\cry\doanQLST\trunk\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
+D:\cry\doanQLST\trunk\QuanLySieuThi\obj\Debug\QuanLySieuThi.Report.frmBaoBieu.resources

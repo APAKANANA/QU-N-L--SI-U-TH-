@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using BUL;
 using Public;
+using System.Data.SqlClient;
 
 namespace QuanLySieuThi
 {
@@ -29,14 +30,21 @@ namespace QuanLySieuThi
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            NhaccBUL cls = new NhaccBUL();
-            NhaccPublic p = new NhaccPublic();
-            p.Mancc = txtMancc.Text;
-            p.Tenncc = txtTenncc.Text;
-            p.Dchi = txtDchi.Text;
-            p.Dthoai = txtDthoai.Text;
-            cls.Themnhacc(p);
-            frmNhacc_Load(sender, e);
+            try
+            {
+                NhaccBUL cls = new NhaccBUL();
+                NhaccPublic p = new NhaccPublic();
+                p.Mancc = txtMancc.Text;
+                p.Tenncc = txtTenncc.Text;
+                p.Dchi = txtDchi.Text;
+                p.Dthoai = txtDthoai.Text;
+                cls.Themnhacc(p);
+                frmNhacc_Load(sender, e);
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Lỗi không thêm được Nhà cung cấp");
+            }
         }
 
     }

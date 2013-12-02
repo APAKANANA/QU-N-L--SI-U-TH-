@@ -25,7 +25,7 @@ namespace QuanLySieuThi
         frmKhachhang kh;
         frmLapHoaDon laphd;
         frmPhongban pb;
-        
+        Report.frmBaoBieu bb;
         public frmMain()
         {
             InitializeComponent();
@@ -108,6 +108,11 @@ namespace QuanLySieuThi
             searchsp.ShowDialog();
         }
 
+        private void mnuLapbaocao_Click(object sender, EventArgs e)
+        {
+            bb = new Report.frmBaoBieu();
+            bb.ShowDialog();
+        }
        
 
         

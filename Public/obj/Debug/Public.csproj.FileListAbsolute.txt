@@ -3,3 +3,8 @@ D:\cry\QuanLySieuThi\Public\bin\Debug\Public.pdb
 D:\cry\QuanLySieuThi\Public\obj\Debug\Public.csprojResolveAssemblyReference.cache
 D:\cry\QuanLySieuThi\Public\obj\Debug\Public.dll
 D:\cry\QuanLySieuThi\Public\obj\Debug\Public.pdb
+D:\cry\doanQLST\trunk\Public\bin\Debug\Public.dll
+D:\cry\doanQLST\trunk\Public\bin\Debug\Public.pdb
+D:\cry\doanQLST\trunk\Public\obj\Debug\Public.csprojResolveAssemblyReference.cache
+D:\cry\doanQLST\trunk\Public\obj\Debug\Public.dll
+D:\cry\doanQLST\trunk\Public\obj\Debug\Public.pdb

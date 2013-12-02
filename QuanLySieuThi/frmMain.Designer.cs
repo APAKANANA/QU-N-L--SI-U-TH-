@@ -45,6 +45,8 @@
             this.nGHIỆPVỤXUẤTNHẬPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuLaphd = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuNhapsp = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuLapbaocao = new System.Windows.Forms.ToolStripMenuItem();
             this.tÌMKIẾMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSearchkh = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSearchNv = new System.Windows.Forms.ToolStripMenuItem();
@@ -196,7 +198,9 @@
             // 
             this.nGHIỆPVỤXUẤTNHẬPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuLaphd,
-            this.mnuNhapsp});
+            this.mnuNhapsp,
+            this.toolStripMenuItem3,
+            this.mnuLapbaocao});
             this.nGHIỆPVỤXUẤTNHẬPToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.nGHIỆPVỤXUẤTNHẬPToolStripMenuItem.Name = "nGHIỆPVỤXUẤTNHẬPToolStripMenuItem";
             this.nGHIỆPVỤXUẤTNHẬPToolStripMenuItem.Size = new System.Drawing.Size(148, 20);
@@ -215,6 +219,18 @@
             this.mnuNhapsp.Size = new System.Drawing.Size(203, 22);
             this.mnuNhapsp.Text = "Nhập sản phẩm vào kho";
             this.mnuNhapsp.Click += new System.EventHandler(this.mnuNhapsp_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(200, 6);
+            // 
+            // mnuLapbaocao
+            // 
+            this.mnuLapbaocao.Name = "mnuLapbaocao";
+            this.mnuLapbaocao.Size = new System.Drawing.Size(203, 22);
+            this.mnuLapbaocao.Text = "Lập báo cáo";
+            this.mnuLapbaocao.Click += new System.EventHandler(this.mnuLapbaocao_Click);
             // 
             // tÌMKIẾMToolStripMenuItem
             // 
@@ -288,9 +304,9 @@
             this.btnHelp,
             this.toolStripSeparator12,
             this.btnExit});
-            this.toolStrip2.Location = new System.Drawing.Point(599, 15);
+            this.toolStrip2.Location = new System.Drawing.Point(630, 15);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(185, 71);
+            this.toolStrip2.Size = new System.Drawing.Size(154, 71);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -610,5 +626,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem mnuDoanhthu;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem mnuLapbaocao;
     }
 }

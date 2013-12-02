@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HoadonBUL.cs" />
+    <Compile Include="KhachhangBUL.cs" />
     <Compile Include="NhaccBUL.cs" />
     <Compile Include="NhanvienBUL.cs" />
     <Compile Include="PhongbanBUL.cs" />

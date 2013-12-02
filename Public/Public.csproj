@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTHDPublic.cs" />
+    <Compile Include="HoadonPublic.cs" />
+    <Compile Include="KhachhangPublic.cs" />
     <Compile Include="NhaccPublic.cs" />
     <Compile Include="NhanvienPublic.cs" />
     <Compile Include="PhongbanPublic.cs" />

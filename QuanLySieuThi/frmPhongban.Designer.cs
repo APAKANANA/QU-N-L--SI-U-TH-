@@ -46,7 +46,7 @@
             this.Tenpb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quyendn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pass = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpIU = new System.Windows.Forms.GroupBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtInterest = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.ts2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grpIU.SuspendLayout();
             this.toolStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,6 +131,7 @@
             // btnRefresh
             // 
             this.btnRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnRefresh.Enabled = false;
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -138,6 +139,7 @@
             this.btnRefresh.Size = new System.Drawing.Size(36, 36);
             this.btnRefresh.Text = "toolStripButton1";
             this.btnRefresh.ToolTipText = "Reload";
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ts2
             // 
@@ -149,7 +151,7 @@
             this.btnCancel});
             this.ts2.Location = new System.Drawing.Point(117, 7);
             this.ts2.Name = "ts2";
-            this.ts2.Size = new System.Drawing.Size(121, 39);
+            this.ts2.Size = new System.Drawing.Size(90, 39);
             this.ts2.TabIndex = 45;
             this.ts2.Text = "toolStrip3";
             // 
@@ -232,22 +234,22 @@
             this.pass.HeaderText = "Mật khẩu";
             this.pass.Name = "pass";
             // 
-            // groupBox1
+            // grpIU
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
-            this.groupBox1.Controls.Add(this.txtPass);
-            this.groupBox1.Controls.Add(this.txtInterest);
-            this.groupBox1.Controls.Add(this.txtName);
-            this.groupBox1.Controls.Add(this.txtId);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.lblInterest);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.lbbMa);
-            this.groupBox1.Location = new System.Drawing.Point(31, 77);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(421, 86);
-            this.groupBox1.TabIndex = 49;
-            this.groupBox1.TabStop = false;
+            this.grpIU.BackColor = System.Drawing.Color.PeachPuff;
+            this.grpIU.Controls.Add(this.txtPass);
+            this.grpIU.Controls.Add(this.txtInterest);
+            this.grpIU.Controls.Add(this.txtName);
+            this.grpIU.Controls.Add(this.txtId);
+            this.grpIU.Controls.Add(this.label4);
+            this.grpIU.Controls.Add(this.lblInterest);
+            this.grpIU.Controls.Add(this.label2);
+            this.grpIU.Controls.Add(this.lbbMa);
+            this.grpIU.Location = new System.Drawing.Point(31, 77);
+            this.grpIU.Name = "grpIU";
+            this.grpIU.Size = new System.Drawing.Size(421, 86);
+            this.grpIU.TabIndex = 49;
+            this.grpIU.TabStop = false;
             // 
             // txtPass
             // 
@@ -323,9 +325,9 @@
             this.toolStrip4.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnExit});
-            this.toolStrip4.Location = new System.Drawing.Point(391, 3);
+            this.toolStrip4.Location = new System.Drawing.Point(360, 3);
             this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(80, 71);
+            this.toolStrip4.Size = new System.Drawing.Size(111, 71);
             this.toolStrip4.TabIndex = 50;
             this.toolStrip4.Text = "toolStrip4";
             // 
@@ -339,6 +341,7 @@
             this.btnExit.Size = new System.Drawing.Size(68, 68);
             this.btnExit.Text = "toolStripButton9";
             this.btnExit.ToolTipText = "Thoát";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmPhongban
             // 
@@ -347,7 +350,7 @@
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(476, 431);
             this.Controls.Add(this.toolStrip4);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpIU);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "frmPhongban";
@@ -362,8 +365,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpIU.ResumeLayout(false);
+            this.grpIU.PerformLayout();
             this.toolStrip4.ResumeLayout(false);
             this.toolStrip4.PerformLayout();
             this.ResumeLayout(false);
@@ -386,7 +389,7 @@
         private System.Windows.Forms.ToolStripButton btnCancel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpIU;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.TextBox txtInterest;
         private System.Windows.Forms.TextBox txtName;

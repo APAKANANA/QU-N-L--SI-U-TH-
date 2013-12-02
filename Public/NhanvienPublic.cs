@@ -8,68 +8,68 @@ namespace Public
 {
    public class NhanvienPublic:PhongbanPublic
     {
-        string _Manv;
-        string _Tennv;
-        string _Gtinh;
-        string _Cmnd;
-        DateTime _Ngsinh;
-        DateTime _Ngayvl;
-        string _Dchi;
-        string _Dthoai;
+        string manv;
+        string tennv;
+        string gioitinh;
+        string cmnd;
+        string ngaysinh;
+        string ngayvl;
+        string dchi;
+        string dthoai;
 
         public string Manv
         {
-            get { return _Manv; }
-            set { _Manv = value; }
+            get { return manv; }
+            set { manv = value; }
         }
         
 
         public string Tennv
         {
-            get { return _Tennv; }
-            set { _Tennv = value; }
+            get { return tennv; }
+            set { tennv = value; }
         }
         
 
-        public string Gtinh
+        public string Gioitinh
         {
-            get { return _Gtinh; }
-            set { _Gtinh = value; }
+            get { return gioitinh; }
+            set { gioitinh = value; }
         }
         
 
         public string Cmnd
         {
-            get { return _Cmnd; }
-            set { _Cmnd = value; }
+            get { return cmnd; }
+            set { cmnd = value; }
         }
         
 
-        public DateTime Ngsinh
+        public string Ngaysinh
         {
-            get { return _Ngsinh; }
-            set { _Ngsinh = value; }
+            get { return ngaysinh; }
+            set { ngaysinh = value; }
         }
         
 
-        public DateTime Ngayvl
+        public string Ngayvl
         {
-            get { return _Ngayvl; }
-            set { _Ngayvl = value; }
+            get { return ngayvl; }
+            set { ngayvl = value; }
         }
         
 
         public string Dchi
         {
-            get { return _Dchi; }
-            set { _Dchi = value; }
+            get { return dchi; }
+            set { dchi = value; }
         }
         
 
         public string Dthoai
         {
-            get { return _Dthoai; }
-            set { _Dthoai = value; }
+            get { return dthoai; }
+            set { dthoai = value; }
         }
     }
 }

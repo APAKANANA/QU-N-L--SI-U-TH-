@@ -12,12 +12,14 @@ namespace BUL
 {
    public class NhanvienBUL
     {
-       NhanvienDAL cls=new NhanvienDAL();
-       public DataTable Danhsachnhanvien()
+       NhanvienDAL cls = new NhanvienDAL();
+
+       public DataTable DanhsachNhanvien()
        {
-           return cls.Danhsachnhanvien();
+           return cls.DanhsachNhanvien();
        }
-       public int Themnhanvien(NhanvienPublic p)
+
+       public int ThemNhanvien(NhanvienPublic p)
        {
            return cls.ThemNhanvien(p);
        }
@@ -31,6 +33,15 @@ namespace BUL
        {
            return cls.XoaNhanvien(p);
        }
-       
-     }
+
+       public DataTable TimNhanvien(string strSearch, string Search)
+       {
+           return cls.TimNhanvien(strSearch, Search);
+       }
+
+       public int SuaManvtrongHD(HoadonPublic q)
+       {
+           return cls.SuaMaNVthanhnull(q);
+       }
+    }
 }

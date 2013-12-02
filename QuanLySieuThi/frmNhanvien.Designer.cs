@@ -35,7 +35,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.optMaNV = new System.Windows.Forms.RadioButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.btnExit = new System.Windows.Forms.ToolStripButton();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.btnCancel = new System.Windows.Forms.ToolStripButton();
             this.btnOK = new System.Windows.Forms.ToolStripButton();
@@ -53,7 +53,7 @@
             this.tsbtnSearch = new System.Windows.Forms.ToolStrip();
             this.txtName = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnSearch = new System.Windows.Forms.ToolStripButton();
             this.lblManv = new System.Windows.Forms.Label();
             this.lblTennv = new System.Windows.Forms.Label();
             this.lblGtinh = new System.Windows.Forms.Label();
@@ -67,12 +67,12 @@
             this.txtTennv = new System.Windows.Forms.TextBox();
             this.txtGtinh = new System.Windows.Forms.TextBox();
             this.txtCmnd = new System.Windows.Forms.TextBox();
-            this.txtNgsinh = new System.Windows.Forms.TextBox();
-            this.txtNgayvl = new System.Windows.Forms.TextBox();
             this.txtDchi = new System.Windows.Forms.TextBox();
             this.txtDthoai = new System.Windows.Forms.TextBox();
             this.txtMapb = new System.Windows.Forms.TextBox();
             this.grptxt = new System.Windows.Forms.GroupBox();
+            this.dtpNgvl = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgsinh = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,6 +83,7 @@
             this.DCHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DTHOAI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MAPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnInbaocao = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.toolStrip3.SuspendLayout();
             this.ts2.SuspendLayout();
@@ -102,9 +103,9 @@
             this.optPhongban.Name = "optPhongban";
             this.optPhongban.Size = new System.Drawing.Size(104, 24);
             this.optPhongban.TabIndex = 2;
-            this.optPhongban.TabStop = true;
             this.optPhongban.Text = "Phòng ban";
             this.optPhongban.UseVisualStyleBackColor = true;
+            this.optPhongban.CheckedChanged += new System.EventHandler(this.optPhongban_CheckedChanged);
             // 
             // optCmnd
             // 
@@ -115,9 +116,9 @@
             this.optCmnd.Name = "optCmnd";
             this.optCmnd.Size = new System.Drawing.Size(74, 24);
             this.optCmnd.TabIndex = 2;
-            this.optCmnd.TabStop = true;
             this.optCmnd.Text = "CMND";
             this.optCmnd.UseVisualStyleBackColor = true;
+            this.optCmnd.CheckedChanged += new System.EventHandler(this.optCmnd_CheckedChanged);
             // 
             // optHoten
             // 
@@ -128,9 +129,9 @@
             this.optHoten.Name = "optHoten";
             this.optHoten.Size = new System.Drawing.Size(79, 24);
             this.optHoten.TabIndex = 1;
-            this.optHoten.TabStop = true;
             this.optHoten.Text = "Họ Tên";
             this.optHoten.UseVisualStyleBackColor = true;
+            this.optHoten.CheckedChanged += new System.EventHandler(this.optHoten_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -149,6 +150,7 @@
             // optMaNV
             // 
             this.optMaNV.AutoSize = true;
+            this.optMaNV.Checked = true;
             this.optMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optMaNV.ForeColor = System.Drawing.Color.Black;
             this.optMaNV.Location = new System.Drawing.Point(33, 12);
@@ -158,22 +160,24 @@
             this.optMaNV.TabStop = true;
             this.optMaNV.Text = "Mã";
             this.optMaNV.UseVisualStyleBackColor = true;
+            this.optMaNV.CheckedChanged += new System.EventHandler(this.optMaNV_CheckedChanged);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 34);
             // 
-            // toolStripButton3
+            // btnExit
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(55, 31);
-            this.toolStripButton3.Text = "toolStripButton4";
-            this.toolStripButton3.ToolTipText = "Exit";
+            this.btnExit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnExit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(55, 31);
+            this.btnExit.Text = "toolStripButton4";
+            this.btnExit.ToolTipText = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // toolStrip3
             // 
@@ -181,7 +185,7 @@
             this.toolStrip3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.toolStrip3.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton3,
+            this.btnExit,
             this.toolStripSeparator4});
             this.toolStrip3.Location = new System.Drawing.Point(705, 401);
             this.toolStrip3.Name = "toolStrip3";
@@ -235,6 +239,7 @@
             // btnRefresh
             // 
             this.btnRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnRefresh.Enabled = false;
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -242,6 +247,7 @@
             this.btnRefresh.Size = new System.Drawing.Size(36, 36);
             this.btnRefresh.Text = "toolStripButton1";
             this.btnRefresh.ToolTipText = "Reload";
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ts3
             // 
@@ -330,7 +336,7 @@
             this.tsbtnSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.txtName,
             this.toolStripSeparator6,
-            this.toolStripButton1});
+            this.btnSearch});
             this.tsbtnSearch.Location = new System.Drawing.Point(558, 9);
             this.tsbtnSearch.Name = "tsbtnSearch";
             this.tsbtnSearch.Size = new System.Drawing.Size(156, 39);
@@ -347,16 +353,17 @@
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(6, 39);
             // 
-            // toolStripButton1
+            // btnSearch
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.ToolTipText = "Tìm kiếm theo tên";
+            this.btnSearch.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(36, 36);
+            this.btnSearch.Text = "toolStripButton1";
+            this.btnSearch.ToolTipText = "Tìm kiếm theo tên";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblManv
             // 
@@ -498,22 +505,6 @@
             this.txtCmnd.Size = new System.Drawing.Size(105, 21);
             this.txtCmnd.TabIndex = 63;
             // 
-            // txtNgsinh
-            // 
-            this.txtNgsinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgsinh.Location = new System.Drawing.Point(11, 148);
-            this.txtNgsinh.Name = "txtNgsinh";
-            this.txtNgsinh.Size = new System.Drawing.Size(104, 21);
-            this.txtNgsinh.TabIndex = 64;
-            // 
-            // txtNgayvl
-            // 
-            this.txtNgayvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayvl.Location = new System.Drawing.Point(11, 187);
-            this.txtNgayvl.Name = "txtNgayvl";
-            this.txtNgayvl.Size = new System.Drawing.Size(104, 21);
-            this.txtNgayvl.TabIndex = 65;
-            // 
             // txtDchi
             // 
             this.txtDchi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -540,6 +531,8 @@
             // 
             // grptxt
             // 
+            this.grptxt.Controls.Add(this.dtpNgvl);
+            this.grptxt.Controls.Add(this.dtpNgsinh);
             this.grptxt.Controls.Add(this.txtManv);
             this.grptxt.Controls.Add(this.txtMapb);
             this.grptxt.Controls.Add(this.txtTennv);
@@ -547,13 +540,27 @@
             this.grptxt.Controls.Add(this.txtGtinh);
             this.grptxt.Controls.Add(this.txtDchi);
             this.grptxt.Controls.Add(this.txtCmnd);
-            this.grptxt.Controls.Add(this.txtNgayvl);
-            this.grptxt.Controls.Add(this.txtNgsinh);
             this.grptxt.Location = new System.Drawing.Point(598, 56);
             this.grptxt.Name = "grptxt";
             this.grptxt.Size = new System.Drawing.Size(159, 342);
             this.grptxt.TabIndex = 69;
             this.grptxt.TabStop = false;
+            // 
+            // dtpNgvl
+            // 
+            this.dtpNgvl.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgvl.Location = new System.Drawing.Point(11, 188);
+            this.dtpNgvl.Name = "dtpNgvl";
+            this.dtpNgvl.Size = new System.Drawing.Size(106, 20);
+            this.dtpNgvl.TabIndex = 65;
+            // 
+            // dtpNgsinh
+            // 
+            this.dtpNgsinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgsinh.Location = new System.Drawing.Point(11, 149);
+            this.dtpNgsinh.Name = "dtpNgsinh";
+            this.dtpNgsinh.Size = new System.Drawing.Size(106, 20);
+            this.dtpNgsinh.TabIndex = 64;
             // 
             // dataGridView1
             // 
@@ -628,12 +635,23 @@
             this.MAPB.HeaderText = "Mã Phòng";
             this.MAPB.Name = "MAPB";
             // 
+            // btnInbaocao
+            // 
+            this.btnInbaocao.Location = new System.Drawing.Point(120, 415);
+            this.btnInbaocao.Name = "btnInbaocao";
+            this.btnInbaocao.Size = new System.Drawing.Size(75, 23);
+            this.btnInbaocao.TabIndex = 70;
+            this.btnInbaocao.Text = "In Báo Cáo";
+            this.btnInbaocao.UseVisualStyleBackColor = true;
+            this.btnInbaocao.Click += new System.EventHandler(this.btnInbaocao_Click);
+            // 
             // frmNhanvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(769, 444);
+            this.Controls.Add(this.btnInbaocao);
             this.Controls.Add(this.grptxt);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblMapb);
@@ -684,7 +702,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton optMaNV;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton btnExit;
         private System.Windows.Forms.ToolStrip toolStrip3;
         private System.Windows.Forms.ToolStripButton btnCancel;
         private System.Windows.Forms.ToolStripButton btnOK;
@@ -702,7 +720,7 @@
         private System.Windows.Forms.ToolStrip tsbtnSearch;
         private System.Windows.Forms.ToolStripTextBox txtName;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btnSearch;
         private System.Windows.Forms.Label lblManv;
         private System.Windows.Forms.Label lblTennv;
         private System.Windows.Forms.Label lblGtinh;
@@ -716,8 +734,6 @@
         private System.Windows.Forms.TextBox txtTennv;
         private System.Windows.Forms.TextBox txtGtinh;
         private System.Windows.Forms.TextBox txtCmnd;
-        private System.Windows.Forms.TextBox txtNgsinh;
-        private System.Windows.Forms.TextBox txtNgayvl;
         private System.Windows.Forms.TextBox txtDchi;
         private System.Windows.Forms.TextBox txtDthoai;
         private System.Windows.Forms.TextBox txtMapb;
@@ -732,5 +748,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DCHI;
         private System.Windows.Forms.DataGridViewTextBoxColumn DTHOAI;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAPB;
+        private System.Windows.Forms.DateTimePicker dtpNgvl;
+        private System.Windows.Forms.DateTimePicker dtpNgsinh;
+        private System.Windows.Forms.Button btnInbaocao;
     }
 }
